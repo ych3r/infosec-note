@@ -87,3 +87,6 @@ black hat python filetype:pdf
 Jordan:jpg
 ```
 
+
+
+Google Hacking Database ([https://www.exploit-db.com/google-hacking-database](https://www.exploit-db.com/google-hacking-database)) is an authoritative source for querying the ever-widening scope of the Google search engine. In the GHDB, you will find search terms for files containing usernames, vulnerable servers, and even files containing passwords.
