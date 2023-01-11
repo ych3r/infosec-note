@@ -10,7 +10,7 @@
 
 ## 🔍 Forensics
 
-* [Intro](forensics/intro.md)
+* [🤔 What's Forensics?](forensics/whats-forensics.md)
 * [🪟 Windows](forensics/windows.md)
 * [🐧 Linux](forensics/linux.md)
 * [🍎 MacOS](forensics/macos.md)
