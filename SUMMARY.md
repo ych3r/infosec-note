@@ -2,6 +2,19 @@
 
 * [Homepage](README.md)
 
+## 🌐 Recon
+
+* [👣 Footprinting](recon/footprinting/README.md)
+  * [Search Engines](recon/footprinting/search-engines.md)
+  * [Web Services](recon/footprinting/web-services.md)
+  * [Social Networking Sites](recon/footprinting/social-networking-sites.md)
+  * [Website](recon/footprinting/website.md)
+  * [Email](recon/footprinting/email.md)
+  * [Whois](recon/footprinting/whois.md)
+  * [DNS](recon/footprinting/dns.md)
+  * [Network](recon/footprinting/network.md)
+  * [Social Engineering](recon/footprinting/social-engineering.md)
+
 ## 🕸 Web
 
 * [SQL Injection](web/sql-injection.md)
