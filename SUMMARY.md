@@ -2,7 +2,13 @@
 
 * [Homepage](README.md)
 
-## Forensics
+## 🕸 Web
+
+* [SQL Injection](web/sql-injection.md)
+* [XSS](web/xss.md)
+* [CSRF](web/csrf.md)
+
+## 🔍 Forensics
 
 * [Intro](forensics/intro.md)
 * [🪟 Windows](forensics/windows.md)
