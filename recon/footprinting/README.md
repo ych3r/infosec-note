@@ -58,3 +58,8 @@ There're two types of footprinting:
 
 </details>
 
+## Tools we can use
+
+### OSINT Framework
+
+link: [https://osintframework.com/](https://osintframework.com/)
