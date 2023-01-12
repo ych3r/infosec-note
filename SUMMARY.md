@@ -14,7 +14,7 @@
 
 ## 🕸 Web
 
-* [💉 SQL injection](web/sql-injection/README.md)
+* [💉 SQL injection](web/sql-injection.md)
   * [Retrieving hidden data](web/sql-injection/retrieving-hidden-data.md)
   * [Subverting application logic](web/sql-injection/subverting-application-logic.md)
   * [UNION attacks](web/sql-injection/union-attacks.md)
