@@ -14,7 +14,12 @@
 
 ## 🕸 Web
 
-* [SQL Injection](web/sql-injection.md)
+* [💉 SQL injection](web/sql-injection/README.md)
+  * [Retrieving hidden data](web/sql-injection/retrieving-hidden-data.md)
+  * [Subverting application logic](web/sql-injection/subverting-application-logic.md)
+  * [UNION attacks](web/sql-injection/union-attacks.md)
+  * [Examining the database](web/sql-injection/examining-the-database.md)
+  * [Blind SQL injection](web/sql-injection/blind-sql-injection.md)
 * [XSS](web/xss.md)
 * [CSRF](web/csrf.md)
 
