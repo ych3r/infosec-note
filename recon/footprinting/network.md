@@ -39,3 +39,15 @@ Linux's traceroute uses UDP protocol.
 ```shell
 $ traceroute www.google.com
 ```
+
+## Traceroute Analysis
+
+Example:
+
+* traceroute 1.10.10.20, second to last hop is 1.10.10.1
+* traceroute 1.10.20.10, third to last hop is 1.10.10.1
+* traceroute 1.10.20.10, second to last hop is 1.10.10.50
+* traceroute 1.10.20.15, third to last hop is 1.10.10.1
+* traceroute 1.10.20.15, second to last hop is 1.10.10.50
+
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>from CEH</p></figcaption></figure>
