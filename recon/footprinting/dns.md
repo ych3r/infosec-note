@@ -25,7 +25,7 @@ DNS zone data include DNS domain names, computer names, IP addresses, and much m
 
 link: [https://securitytrails.com/](https://securitytrails.com/)
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>SecurityTrails</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>SecurityTrails</p></figcaption></figure>
 
 ## Reverse DNS Lookup
 
@@ -45,4 +45,4 @@ dnsrecon -r 162.241.216.0-162.241.216.255
 
 link: [https://mxtoolbox.com/](https://mxtoolbox.com/)
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption><p>mxtoolbox</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>mxtoolbox</p></figcaption></figure>
