@@ -11,6 +11,11 @@
   * [DNS](recon/footprinting/dns.md)
   * [Network](recon/footprinting/network.md)
   * [Social Engineering](recon/footprinting/social-engineering.md)
+* [🛸 Scanning](recon/scanning/README.md)
+  * [Host](recon/scanning/host.md)
+  * [Port & Service](recon/scanning/port-and-service.md)
+  * [OS](recon/scanning/os.md)
+  * [Bypass IDS & Firewall](recon/scanning/bypass-ids-and-firewall.md)
 
 ## 🕸 Web
 
