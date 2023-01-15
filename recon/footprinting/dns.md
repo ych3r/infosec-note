@@ -39,7 +39,7 @@ link: [https://github.com/darkoperator/dnsrecon](https://github.com/darkoperator
 dnsrecon -r 162.241.216.0-162.241.216.255
 ```
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>dnsrecon in Kali</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>dnsrecon in Kali</p></figcaption></figure>
 
 ### Reverse Lookup
 

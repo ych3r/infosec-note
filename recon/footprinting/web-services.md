@@ -28,7 +28,7 @@ https://searchdns.netcraft.com/?host=microsoft.com
 
 link: [https://github.com/aboul3la/Sublist3r](https://github.com/aboul3la/Sublist3r)
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Sublist3r in Kali</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption><p>Sublist3r in Kali</p></figcaption></figure>
 
 ## People Search
 
