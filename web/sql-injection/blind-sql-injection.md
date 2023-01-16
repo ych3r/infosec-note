@@ -6,3 +6,4 @@ description: >-
 
 # Blind SQL injection
 
+more: [https://portswigger.net/web-security/sql-injection/blind](https://portswigger.net/web-security/sql-injection/blind)

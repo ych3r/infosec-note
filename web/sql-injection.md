@@ -36,11 +36,31 @@ This is serious because databases are often used to store sensitive information,
 
 ## How to detect it?
 
-
+* Use single quote `'`and looking for errors.
+* Use `SQL-specific syntax` and looking for systematic differences in responses.
+* Use Boolean conditions like `OR 1=1` and `OR 1=2` and looking for differences in responses.
+* Use `payload disigned to trigger time delays` and looking for differences in respond time.
+* Use OAST payloads designed to trigger an out-of-band network interaction and monitoring for any resulting interactions.
 
 ## How to prevent it?
 
+Use **Parameterized queries aka prepared statements** instead of string concatenation within the query.
 
+From
+
+```sql
+String query = "SELECT * FROM products WHERE category = '"+ input + "'";
+Statement statement = connection.createStatement();
+ResultSet resultSet = statement.executeQuery(query);
+```
+
+To
+
+```sql
+PreparedStatement statement = connection.prepareStatement("SELECT * FROM products WHERE category = ?");
+statement.setString(1, input);
+ResultSet resultSet = statement.executeQuery();
+```
 
 
 

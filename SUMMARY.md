@@ -25,8 +25,11 @@
   * [UNION attacks](web/sql-injection/union-attacks.md)
   * [Examining the database](web/sql-injection/examining-the-database.md)
   * [Blind SQL injection](web/sql-injection/blind-sql-injection.md)
-* [XSS](web/xss.md)
-* [CSRF](web/csrf.md)
+* [❌ XSS](web/xss/README.md)
+  * [Reflected XSS](web/xss/reflected-xss.md)
+  * [Stored XSS](web/xss/stored-xss.md)
+  * [DOM-based XSS](web/xss/dom-based-xss.md)
+* [🏄 CSRF](web/csrf.md)
 
 ## 🔍 Forensics
 
