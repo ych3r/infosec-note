@@ -6,7 +6,7 @@ description: Who's alive?
 
 ## ARP Ping Scan
 
-
+The ARP packets are sent for discovering all active devices in the IPv4 range even though some devices are hidden by restrictive firewalls.
 
 \-sn: disable the port scan
 
