@@ -34,8 +34,13 @@
 ## 🔍 Forensics
 
 * [🤔 What's Forensics?](forensics/whats-forensics.md)
-* [🪟 Windows](forensics/windows.md)
+* [🪟 Windows](forensics/windows/README.md)
+  * [Registry](forensics/windows/registry.md)
 * [🐧 Linux](forensics/linux.md)
 * [🍎 MacOS](forensics/macos.md)
 * [📱 Mobile](forensics/mobile.md)
 * [☁ Cloud](forensics/cloud.md)
+
+## 👔 Active Directory
+
+* [Page 1](active-directory/page-1.md)
