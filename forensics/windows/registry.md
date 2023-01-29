@@ -38,11 +38,17 @@ In `C:\Windows\System32\Config` directory:
 4. SOFTWARE -> HKEY\_LOCAL\_MACHINE\Software
 5. SYSTEM -> HKEY\_LOCAL\_MACHINE\System
 
+**SAM** hive stores user accounts and their password hashes, groups, and domain information.
+
+**SYSTEM** hive contains drive letter designations for internal and external storage devices, the system name, and configuration data for hardware and software. It can help identify a computer and any storage devices that might have been mounted.
+
 There are also two hives containing user information.
 
 In `C:\Users\<username>`:
 
 * NTUSER.DAT -> HKEY\_CURRENT\_USER
+
+**ntuser.dat** contains user-specific information, such as personalized settings.
 
 In `C:\Users<username>\AppData\Local\Microsoft\Windows`:
 
