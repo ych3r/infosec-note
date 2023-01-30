@@ -40,7 +40,7 @@ nmap -sn -PU 192.168.1.1
 
 ### ICMP ECHO Ping Scan
 
-ICMP ECHO ping scan involves sending ICMP ECHO requests to a host. If it is alive, it will respond with an ICMP ECHO reply.
+[ICMP](https://en.wikipedia.org/wiki/Internet\_Control\_Message\_Protocol) ECHO ping scan involves sending ICMP ECHO requests to a host. If it is alive, it will respond with an ICMP ECHO reply.
 
 {% hint style="info" %}
 It doesn't work on Windows-based networks, their TCP/IP stack implementation doesn't reply to ICMP probes.
@@ -84,7 +84,7 @@ nmap -sn -PM 192.168.1.1
 
 ### TCP SYN Ping Scan
 
-In TCP SYN ping, hackers initiate the three-way handshake by sending the empty TCP SYN flag to the target host. After the reception of the ACK flag for the target, the hacker confirms the target host is active and sends an RST flag to terminate the connection.
+In [TCP](https://en.wikipedia.org/wiki/Transmission\_Control\_Protocol) SYN ping, hackers initiate the three-way handshake by sending the empty TCP SYN flag to the target host. After the reception of the ACK flag for the target, the hacker confirms the target host is active and sends an RST flag to terminate the connection.
 
 Port 80 is used as the default destination port.
 
@@ -108,7 +108,7 @@ nmap -sn -PA 192.168.1.1
 
 ### IP Protocol Ping Scan
 
-Hackers send IP ping packets with the IP header of any specified protocol number.
+Hackers send [IP](https://en.wikipedia.org/wiki/Internet\_Protocol) ping packets with the IP header of any specified protocol number.
 
 \-PO: perform an IP protocol ping scan
 
