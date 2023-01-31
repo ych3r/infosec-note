@@ -78,3 +78,9 @@ Tools we can use:
 Tools we can use:
 
 * AccessData Registry Viewer
+
+## System Information and Accounts
+
+**OS Version**: `SOFTWARE\Microsoft\Windows NT\CurrentVersion`
+
+**Current control sets** are used for controlling system startup. **ControlSet001** will point to the Control Set that the machine booted with, **ControlSet002** will be the last known good configuration.
