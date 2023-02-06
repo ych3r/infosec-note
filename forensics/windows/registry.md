@@ -81,6 +81,42 @@ Tools we can use:
 
 ## System Information and Accounts
 
-**OS Version**: `SOFTWARE\Microsoft\Windows NT\CurrentVersion`
+**OS Version**:&#x20;
 
-**Current control sets** are used for controlling system startup. **ControlSet001** will point to the Control Set that the machine booted with, **ControlSet002** will be the last known good configuration.
+* `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion`
+
+**Current control sets:**
+
+> **Current control sets** are used for controlling system startup. **ControlSet001** will point to the Control Set that the machine booted with, **ControlSet002** will be the last known good configuration.
+
+* `HKLM\SYSTEM\CurrentControlSet`
+
+**Computer Name:**
+
+* `HKLM\SYSTEM\CurrentControlSet\Control\ComputerName\ComputerName`
+
+**Time Zone:**
+
+* `HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation`
+
+**Network Interfaces and Past Networks:**
+
+* `HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces`
+* The past networks a given machine was connected to can be found in the following locations:
+  * `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Signatures\Unmanaged`
+  * `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Signatures\Managed`
+
+**Autostart Programs (Autoruns):**
+
+* programs or commands that run when a user logs on:
+  * `NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Run`
+  * `HKLM\NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\RunOnce`
+  * `HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce`
+  * `HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run`
+  * `HKLMSOFTWARE\Microsoft\Windows\CurrentVersion\Run`
+* services information:
+  * `HKLM\SYSTEM\CurrentControlSet\Services`
+
+**SAM hive and user information:**
+
+* `HKLM\SAM\Domains\Account\Users`
