@@ -50,7 +50,7 @@ In `C:\Users\<username>`:
 
 **ntuser.dat** contains user-specific information, such as personalized settings.
 
-In `C:\Users<username>\AppData\Local\Microsoft\Windows`:
+In `C:\Users\<username>\AppData\Local\Microsoft\Windows`:
 
 * USRCLASS.DAT -> HKEY\_CURRENT\_USER\Software\CLASSES
 
@@ -58,12 +58,12 @@ Apart from them, Windows creates Amcache hive to save information on programs th
 
 * `C:\Windows\AppCompat\Programs\Amcache.hve`
 
-## Data Acquisition
+### Data Acquisition
 
 > Whether it's a live system or an image, for accuracy, it's recommended to make a copy of it.
 
 {% hint style="info" %}
-The registry hives in  `%WINDIR%\System32\Config` are restricted files, and can't be copied.
+The registry hives in `%WINDIR%\System32\Config` are restricted files, and can't be copied.
 {% endhint %}
 
 Tools we can use:
@@ -71,7 +71,7 @@ Tools we can use:
 * Autopsy
 * FTK Imager
 
-## Exploring Registry
+### Exploring Registry
 
 > After we copied the registry hives, we need a tool to view them. (regedit only works with live system)
 
@@ -120,3 +120,37 @@ Tools we can use:
 **SAM hive and user information:**
 
 * `HKLM\SAM\Domains\Account\Users`
+
+## Usage or knowledge of files/folders
+
+**Recent Files:**
+
+* Recently opened files for each user.
+* `NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs`
+
+**Office Recent Files:**
+
+* Microsoft Office recent files.
+* `NTUSER.DAT\Software\Microsoft\Office\VERSION\UserMRU\LiveID_####\FileMRU`
+
+**ShellBags:**
+
+* Every user has a specific layout for the folder. This information can identify the Most Recently Used files and folders.
+* Use Eric Zimmerman's tool: ShellBags Explorer.
+* `USRCLASS.DAT\Local Settings\Software\Microsoft\Windows\Shell\Bags`
+* `USRCLASS.DAT\Local Settings\Software\Microsoft\Windows\Shell\BagMRU`
+* `NTUSER.DAT\Software\Microsoft\Windows\Shell\BagMRU`
+* `NTUSER.DAT\Software\Microsoft\Windows\Shell\Bags`
+
+**Open/Save and LastVisited Dialog MRUs:**
+
+* A dialog box often appears asking for the file location when we open or save a file. Windows remembers that location.
+* `NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSavePIDlMRU`
+* `NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\LastVisitedPidlMRU`
+
+**Windows Explorer Address/Search Bars:**
+
+* The paths typed in the Explorer address bar or searches:
+* `NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\TypedPaths`
+* `NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\WordWheelQuery`
+
