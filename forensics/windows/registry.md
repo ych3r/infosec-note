@@ -154,3 +154,49 @@ Tools we can use:
 * `NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\TypedPaths`
 * `NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\WordWheelQuery`
 
+## Evidence of Execution
+
+**UserAssist:**
+
+* Windows Explorer keeps track of applications launched by the user. It contains information about the programs launched, the time of their launch, and the number of times they were executed.
+* `NTUSER.DAT\Software\Microsoft\Windows\Currentversion\Explorer\UserAssist{GUID}\Count`
+
+**ShimCache:**
+
+* A mechanism used to keep track of application compatibility with the OS and tracks all applications launched on the machine. Its main purpose in Windows is to ensure the backward compatibility of applications.
+* Use AppCompatCache.
+* `SYSTEM\CurrentControlSet\Control\Session Manager\AppCompatCache`
+
+**AmCache:**
+
+* AmCache performs a similar function to ShimCache. It stores additional data related to program executions. It includes execution path, installation, execution and deletion times, and SHA1 hash.
+* `C:\Windows\appcompat\Programs\Amcache.hve`
+* info about the last executed programs: `Amcache.hve\Root\File{Volume GUID}\`
+
+**BAM/DAM:**
+
+* Background Activity Monitor keeps a tab on the activity of background apps.
+* Desktop Activity Moderator optimizes the power consumption of the device.
+* `SYSTEM\CurrentControlSet\Services\bam\UserSettings\{SID}`
+* `SYSTEM\CurrentControlSet\Services\dam\UserSettings\{SID}`
+
+## External Devices/USB device
+
+**Device identification:**
+
+* USK keys plug information.
+* `SYSTEM\CurrentControlSet\Enum\USBSTOR`
+* `SYSTEM\CurrentControlSet\Enum\USB`
+
+**First/Last Times:**
+
+* First and last time the device was connected.
+* `SYSTEM\CurrentControlSet\Enum\USBSTOR\Ven_Prod_Version\USBSerial#\Properties{83da6326-97a6-4088-9453-a19231573b29}####`
+* 0064: First connection time
+* 0066: Last connection time
+* 0067: Last removal time
+
+**USB device Volume Name:**
+
+* `SOFTWARE\Microsoft\Windows Portable Devices\Devices`
+
