@@ -43,4 +43,4 @@
 
 ## 👔 Active Directory
 
-* [Page 1](active-directory/page-1.md)
+* [Basics](active-directory/basics.md)
